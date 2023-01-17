@@ -1,0 +1,16 @@
+.icon-delivery{
+    margin-top: 100px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 100%;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.btn-delivery{
+    background-color: #f50057;
+    border: none;
+}
+.btn-delivery:hover{
+    background-color: #690929;
+}

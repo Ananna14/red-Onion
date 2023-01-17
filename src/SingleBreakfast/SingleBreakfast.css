@@ -1,0 +1,12 @@
+.inner{
+    overflow: hidden;
+}
+.inner{
+    transition: all 1.1s ease;
+}
+.inner:hover{
+    transform: scale(1.1);
+}
+.price-text{
+   color: #f50057;
+}
