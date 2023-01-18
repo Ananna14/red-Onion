@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import icon from '../images/icon.png'
 import { FaShoppingBasket } from 'react-icons/fa';
 

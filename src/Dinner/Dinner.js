@@ -6,7 +6,7 @@ const Dinner = () => {
     const [dinners, setDinners] = useState([]);
 
     useEffect(()=>{
-        fetch(`./Dinner.json`)
+        fetch(`./dinner.json`)
         .then(res => res.json())
         .then(data => setDinners(data))
     })

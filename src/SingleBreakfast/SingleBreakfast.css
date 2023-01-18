@@ -10,3 +10,30 @@
 .price-text{
    color: #f50057;
 }
+.btn-color{
+    background-color: #f50057;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 0;
+    padding: 2px 5px;
+    border-radius: 5px;
+    /* visibility: hidden; */
+}
+ /* bottom: 0; */
+.btn-color:hover{
+    background-color: #f50057;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 0;
+    padding: 2px 5px;
+    border-radius: 5px;
+    visibility: visible;
+}
+ /* .hide {
+    display: none;
+  }
+.hide:hover{
+    display: block;
+} */
