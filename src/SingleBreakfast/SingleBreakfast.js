@@ -12,14 +12,14 @@ const SingleBreakfast = (props) => {
     <div className="col-lg-4 col-md-6 col-12">
           <Col>
             <Card style={{ width: '20rem' }}  className="inner">
-            {/* <Link> */}
+            <Link to={`/details/${id}`}>
               <Card.Img variant="top" src={img} className="inner" />
-              <div className='d-flex justify-content-end'>
+            </Link>
+            <div className='d-flex justify-content-end'>
                 <button
                 onClick={() => props.handleAddToCart(props.breakfast)}
                 className='btn-color'><FaCartPlus/></button>
               </div><br/>
-            {/* </Link> */}
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>

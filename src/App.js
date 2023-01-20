@@ -5,10 +5,8 @@ import Breakfast from './Breakfast/Breakfast';
 import Lunch from './Lunch/Lunch';
 import Dinner from './Dinner/Dinner';
 import Home from './Home/Home';
-import Footer from './Footer/Footer';
-import Details from './BreakfastDetails/Details';
-import Delivery from './Delivery/Delivery';
 import TwoFooterAdd from './TwoFooterAdd/TwoFooterAdd';
+import DetailBreakfast from './SingleDetails/DetailBreakfast';
 
 
 
@@ -22,7 +20,7 @@ function App() {
         <Route path="/breakfast" element={<Breakfast/>}></Route>
         <Route path="/lunch" element={<Lunch/>}></Route>
         <Route path="/dinner" element={<Dinner/>}></Route>
-        <Route path="/dinner" element={<Delivery/>}></Route>
+        <Route path="/details/:id" element={<DetailBreakfast/>}></Route>
       
        
       </Routes>
