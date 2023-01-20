@@ -5,12 +5,13 @@ const DetailBreakfast = () => {
   const {id} = useParams();
   const [breakfast, setBreakfast] = useState({});
 
-  useEffect(()=>{
-    const url = `./breakfast.json`;
-     fetch(url)
-    .then(res => res.json())
-    .then(data =>console.log(data))
-  }, [])
+  // const p = data.breakfasts.find((breakfast)=>conver)
+  // useEffect(()=>{
+  //   const url = `./breakfast.json/${id}`;
+  //    fetch(url)
+  //   .then(res => res.json())
+  //   .then(data =>console.log(data))
+  // }, [])
 
   return (
     <div>DetailBreakfast comming soon {id}</div>

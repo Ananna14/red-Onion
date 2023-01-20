@@ -21,8 +21,6 @@ function App() {
         <Route path="/lunch" element={<Lunch/>}></Route>
         <Route path="/dinner" element={<Dinner/>}></Route>
         <Route path="/details/:id" element={<DetailBreakfast/>}></Route>
-      
-       
       </Routes>
       <TwoFooterAdd/>
       </BrowserRouter>

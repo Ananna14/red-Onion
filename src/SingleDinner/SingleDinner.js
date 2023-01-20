@@ -1,14 +1,23 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
+import { FaCartPlus } from 'react-icons/fa';
 
-const SingleDinner = ({dinner}) => {
-    const { price, img, name, discription } = dinner;
+const SingleDinner = (props) => {
+    const { price, img, name, discription, id } = props.dinner;
   return (
     <div className="col-lg-4 col-md-6 col-12">
          <Col>
           <Card style={{ width: '20rem' }} className="inner">
-            <Card.Img variant="top" src={img} className="inner" />
+           <Link  to={`/details/${id}`}>
+           <Card.Img variant="top" src={img} className="inner" />
+           </Link>
+            <div className='d-flex justify-content-end'>
+                <button
+                onClick={() => props.handleAddToCart(props.dinner)}
+                className='btn-color'><FaCartPlus/></button>
+              </div><br/>
             <Card.Body>
               <Card.Title>{name}</Card.Title>
               <Card.Text>
