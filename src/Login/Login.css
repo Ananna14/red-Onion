@@ -1,0 +1,16 @@
+.btn-form{
+    background-color: #f50057;
+    border: 1px solid #f50057;
+    color: white;
+}
+.btn-form:hover{
+    background-color: #f50057;
+    border: 1px solid #f50057;
+    color: white;
+}
+.text-color{
+    color: #f50057;
+}
+.input-btn{
+    border: 1px solid #f50057;
+}

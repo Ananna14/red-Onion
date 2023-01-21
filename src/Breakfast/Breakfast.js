@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import SingleBreakfast from '../SingleBreakfast/SingleBreakfast';
 import Row from 'react-bootstrap/Row';
 import Cart from '../Cart/Cart';
+import Nav from '../Nav/Nav';
+import Delivery from '../Delivery/Delivery';
+import Footer from '../Footer/Footer';
 
 const Breakfast = () => {
   const [breakfasts, setBreakfasts ] = useState([]);
@@ -20,6 +23,7 @@ const Breakfast = () => {
 
   return (
    <>
+   <Nav/>
     {/* 1st-part */}
     <div>
       <Cart cart={cart}></Cart>
@@ -36,6 +40,8 @@ const Breakfast = () => {
       }
      </Row>
     </div>
+    <Delivery/>
+    <Footer/>
    </>
   )
 }

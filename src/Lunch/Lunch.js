@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Row from 'react-bootstrap/Row';
 import Cart from '../Cart/Cart';
+import Delivery from '../Delivery/Delivery';
+import Footer from '../Footer/Footer';
+import Nav from '../Nav/Nav';
 import SingleLunch from '../SingleLunch/SingleLunch';
 
 const Lunch = () => {
@@ -19,6 +22,7 @@ const Lunch = () => {
     }
   return (
     <>
+    <Nav/>
      {/* 1st-part */}
      <div>
      <Cart cart={cart}></Cart>
@@ -34,6 +38,8 @@ const Lunch = () => {
       }
      </Row>
     </div>
+    <Delivery/>
+    <Footer/>
     </>
   )
 }
