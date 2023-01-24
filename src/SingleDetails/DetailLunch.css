@@ -1,0 +1,16 @@
+.single-btn{
+    background-color: #f50057;
+    border: none;
+    color: white;
+}
+.single-btn:hover{
+    background-color: #9f2a53;
+    border: none;
+    color: white;
+}
+.blue-btn{
+    background-color: #3f51b5;
+}
+.blue-btn:hover{
+    background-color: #1e2c78;
+}

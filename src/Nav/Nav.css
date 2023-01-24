@@ -1,3 +1,15 @@
 /* .router-fixed{
     position: fixed;
 } */
+/* nav .animation{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    z-index: 0;
+    background-color: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+} */
+/* .hover-text{
+position: relative;
+} */

@@ -10,7 +10,7 @@ const SingleDinner = (props) => {
     <div className="col-lg-4 col-md-6 col-12">
          <Col>
           <Card style={{ width: '20rem' }} className="inner">
-           <Link  to={`/details/${id}`}>
+           <Link  to={`/dinner/${id}`}>
            <Card.Img variant="top" src={img} className="inner" />
            </Link>
             <div className='d-flex justify-content-end'>
@@ -23,7 +23,7 @@ const SingleDinner = (props) => {
               <Card.Text>
                 {discription}
               </Card.Text>
-              <h2 className='d-flex justify-content-start text-danger'>{price}</h2>
+              <h2 className='d-flex justify-content-start price-text'>${price}</h2>
             </Card.Body>
           </Card>
         </Col>

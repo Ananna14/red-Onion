@@ -5,16 +5,20 @@ import Cart from '../Cart/Cart';
 import Nav from '../Nav/Nav';
 import Delivery from '../Delivery/Delivery';
 import Footer from '../Footer/Footer';
+import { breakfastsData } from '../FilterData/Breakfast';
 
 const Breakfast = () => {
-  const [breakfasts, setBreakfasts ] = useState([]);
+  // const [breakfasts, setBreakfasts ] = useState([]);
+  const [breakfasts, setBreakfasts ] = useState(breakfastsData);
+  // console.log(breakfasts)
   const[cart, setCart] = useState([]);
 
-  useEffect(()=>{
-    fetch("./breakfast.json")
-    .then(res => res.json())
-    .then(data => setBreakfasts(data))
-  }, [])
+  // useEffect(()=>{
+  //   fetch("./breakfast.json")
+  //   .then(res => res.json())
+  //   .then(data => setBreakfasts(data))
+  // }, [])
+ 
   const handleAddToCart=(breakfast)=>{
     // console.log(breakfast);
     const newCart = [...cart, breakfast];
