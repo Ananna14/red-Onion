@@ -14,3 +14,8 @@
 .blue-btn:hover{
     background-color: #1e2c78;
 }
+.icon-added{
+    border: 1px solid rgb(200, 190, 190);
+    cursor: pointer;
+    margin-left: 20px;
+}
