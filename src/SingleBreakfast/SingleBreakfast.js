@@ -8,7 +8,7 @@ const SingleBreakfast = (props) => {
   // console.log(props);
     const { price, img, name, discription, id } = props.breakfast;
   return (
-    <div className="col-lg-4 col-md-6 col-12">
+    <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
       {/* <Col> */}
       <Card style={{ width: '21rem' }}  className="inner">
             <Link to={`/details/${id}`}>

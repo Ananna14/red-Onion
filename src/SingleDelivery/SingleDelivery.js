@@ -8,7 +8,7 @@ import './SingleDelivery.css'
 const SingleDelivery = ({delivery}) => {
     const { img, name, discription } = delivery;
   return (
-    <div className="col-lg-4 col-md-6 col-12">
+    <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
           <Card style={{ width: '21rem'}}>
             <Card.Img variant="top" style={{ width: '21rem', height:'21rem'}}  src={img} />
             <Card.Body className="p-3">

@@ -7,9 +7,9 @@ import { FaCartPlus } from 'react-icons/fa';
 const SingleDinner = (props) => {
     const { price, img, name, discription, id } = props.dinner;
   return (
-    <div className="col-lg-4 col-md-6 col-12">
+    <div className="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
          <Col>
-          <Card style={{ width: '20rem' }} className="inner">
+          <Card style={{ width: '21rem' }} className="inner">
            <Link  to={`/dinner/${id}`}>
            <Card.Img variant="top" src={img} className="inner" />
            </Link>

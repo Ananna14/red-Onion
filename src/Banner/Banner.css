@@ -8,3 +8,12 @@
 .banner-text{
     padding-top: 200px;
 }
+.search-btn{
+    background-color: white;
+    border: none;
+    /* padding: 0px 5px; */
+}
+.edit{
+    border: none;
+    padding: 6px;
+}
