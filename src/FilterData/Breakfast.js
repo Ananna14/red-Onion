@@ -6,6 +6,8 @@ export const breakfastsData =[
         price: 12.34,
         id:"1",
         details: "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
+        singleOne:"https://i.ibb.co/n1t2HK3/Capture.png",
+        singleTwo:"https://i.ibb.co/fSKVjd0/br-2.jpg"
       },
       {
         name: "Breakfast Sandwich",
@@ -14,6 +16,8 @@ export const breakfastsData =[
         price: 22.11,
         id:"2",
         details: "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
+        singleOne:"https://i.ibb.co/zbDLy8k/sn-2.jpg",
+        singleTwo:"https://i.ibb.co/09Q5Cw0/Capture.png"
       },
       {
         name: "Eggs Benedict",
@@ -22,6 +26,8 @@ export const breakfastsData =[
         price: 33.22,
         id:"3",
         "details": "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
+        singleOne:"https://i.ibb.co/D8bsMFn/Capture.png",
+        singleTwo:"https://i.ibb.co/YtwNXcJ/Capture.png"
       },
       {
         name: "Toast Coroissant Fried egg",
@@ -30,6 +36,8 @@ export const breakfastsData =[
         price: 91.00,
         id:"4",
         "details": "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
+        singleOne:"https://i.ibb.co/5v91cjj/Capture.png",
+        singleTwo:"https://i.ibb.co/DgjcbhB/Capture.png"
       },
       {
         name: "Backed Chicken",
@@ -38,6 +46,8 @@ export const breakfastsData =[
         price: 3.99,
         id:"5",
         "details": "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
+        singleOne:"https://i.ibb.co/FzVWrs5/c-2.jpg",
+        singleTwo:"https://i.ibb.co/r4nkxYs/c-1.webp"
       },
       {
         name: "Full breakfast Fried Egg Toast Brunch",
@@ -46,6 +56,8 @@ export const breakfastsData =[
         price: 10.99,
         id:"6",
         "details": "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
+        singleOne:"https://i.ibb.co/2YcP3tQ/Capture.png",
+        singleTwo:"https://i.ibb.co/N93C35t/v-1.webp"
       }
 ]
 

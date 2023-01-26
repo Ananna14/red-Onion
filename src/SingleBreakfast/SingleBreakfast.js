@@ -13,8 +13,10 @@ const SingleBreakfast = (props) => {
       <Card style={{ width: '21rem' }}  className="inner">
             <Link to={`/details/${id}`}>
               <Card.Img variant="top" src={img} className="inner" />
+              {/* carousel */}
             </Link>
             <div className='d-flex justify-content-end'>
+              {/* btn-added */}
                 <button
                 onClick={() => props.handleAddToCart(props.breakfast)}
                 className='btn-color'><FaCartPlus/></button>

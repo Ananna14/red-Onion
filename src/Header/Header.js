@@ -2,6 +2,7 @@ import React from 'react'
 import icon from '../images/icon.png'
 import { FaShoppingBasket } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { FaCartPlus } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -14,6 +15,7 @@ const Header = () => {
         </Link>
         </div>
         <div className="col-6  d-flex justify-content-end">
+        <Link className='fs-5' to="/"><FaCartPlus/></Link>
        <Link to="/login" className='text-decoration-none text-secondary'>Login</Link>
        
         </div>   

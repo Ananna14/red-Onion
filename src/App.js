@@ -10,10 +10,16 @@ import Header from './Header/Header';
 import Register from './Register/Register';
 import DetailDinner from './SingleDetails/DetailDinner';
 import DetailLunch from './SingleDetails/DetailLunch';
+import { useState } from 'react';
 
 
 
 function App() {
+//   const [shoppingCart, setShoppingCart] = useState([]);
+
+//   const addToCart=(data)=>{
+// console.log(data)
+//   }
   return (
     <div className="App">
       <BrowserRouter>

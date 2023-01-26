@@ -5,6 +5,7 @@ import { FaCartPlus } from 'react-icons/fa';
 import './DetailLunch.css'
 import { FaPlus } from 'react-icons/fa';
 import { FaMinus } from 'react-icons/fa';
+import arrow from '../arrow-img.jpg'
 
 const DetailLunch = () => {
     const {id} = useParams();
@@ -57,6 +58,15 @@ const DetailLunch = () => {
             <Link to="/"><button className="mx-1 single-btn p-1 rounded-pill px-3 blue-btn"><span  className="mx-1">ADD MORE</span></button></Link>
          </div>
           {/* btn-added-end */}
+
+             {/* 2_card_added-start */}
+        <div className='d-flex justify-content-start pt-5'>
+            <img className='w-25' src={bodyData.singleOne} alt="" />
+            <img className='w-25 mx-4' src={bodyData.singleTwo} alt="" />
+            <img className='arrow-width d-flex justify-content-end' src={arrow} alt="" />
+        </div>
+        {/* 2_card_added-end */}
+
         </div>
         <div class="col-12 col-lg-6">
           <img className='w-100' src={bodyData.img} alt="" />
