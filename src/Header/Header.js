@@ -16,6 +16,7 @@ const Header = () => {
         </div>
         <div className="col-6  d-flex justify-content-end">
         <Link className='fs-5' to="/"><FaCartPlus/></Link>
+       
        <Link to="/login" className='text-decoration-none text-secondary'>Login</Link>
        
         </div>   

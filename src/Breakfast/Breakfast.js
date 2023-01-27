@@ -20,30 +20,41 @@ const Breakfast = () => {
   // }, [])
  
   const handleAddToCart=(breakfast)=>{
-    // console.log(breakfast);
-    const newCart = [...cart, breakfast];
+    console.log(breakfast);
+    const newCart = [...cart, {...breakfast, quantity: 1}];
     setCart(newCart);
   }
+// const [item, setItem] = useState([]);
 
+// const addToCart = (data)=>{
+//   console.log(item);
+//   // const newCart = [...item, data];
+//   setCart([...item, data]);
+// }
+const [showCart, setShowCart] = useState(false);
+const handleShow=(value)=>{
+setShowCart(value);
+}
   return (
    <>
-   <Nav/>
-    {/* 1st-part */}
-    <div>
-      <Cart cart={cart}></Cart>
-    </div><br/><br/>
- {/* 1st-2nd */}
-    <div className="container">
-      <Row xs={1} md={2} className="g-5">
-      {
-        breakfasts.map(breakfast => <SingleBreakfast
-        key={breakfast.img}
-        breakfast={breakfast}
-        handleAddToCart={handleAddToCart}
-        ></SingleBreakfast>)
-      }
-     </Row>
-    </div>
+   <Nav count={cart.length} handleShow={handleShow}></Nav>
+   {
+    showCart ? 
+     <Cart cart={cart}></Cart> :
+<div className="container">
+<Row xs={1} md={2} className="g-5">
+{
+  breakfasts.map(breakfast => <SingleBreakfast
+  key={breakfast.img}
+  breakfast={breakfast}
+  handleAddToCart={handleAddToCart}
+  ></SingleBreakfast>)
+}
+</Row>
+</div>
+   }
+   
+ 
     <Delivery/>
     <Footer/>
    </>

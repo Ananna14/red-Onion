@@ -16,8 +16,8 @@ export const lunchData = [
       name: "Fried Chicken Bento",
       details: "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
       id:"8",
-      singleOne:"",
-      singleTwo:""
+      singleOne:"https://i.ibb.co/XLbSyF6/Capture.png",
+      singleTwo:"https://i.ibb.co/qJZRmyD/Capture-2.png"
     },
     {
       img: "https://i.ibb.co/GWttSFm/lunch3.png",
@@ -26,8 +26,8 @@ export const lunchData = [
       name: "India Lunch",
       details: "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
       id:"9",
-      singleOne:"",
-      singleTwo:""
+      singleOne:"https://i.ibb.co/t34Ps0h/i-1.png",
+      singleTwo:"https://i.ibb.co/Z1rK6ys/i-2.png"
     },
     {
       img: "https://i.ibb.co/MyHttMT/lunch5.png",
@@ -36,8 +36,8 @@ export const lunchData = [
       name: "Beef Steak",
       details: "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
       id:"10",
-      singleOne:"",
-      singleTwo:""
+      singleOne:"https://i.ibb.co/L5gnjtC/Capture.png",
+      singleTwo:"https://i.ibb.co/dW3bWbs/Capture.png"
     },
     {
       img: "https://i.ibb.co/WcwZWVD/lunch-2.png",
@@ -46,8 +46,8 @@ export const lunchData = [
       name: "Hone-Soy-Glazed Salmon with Peppers",
       details: "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
       id:"11",
-      singleOne:"",
-      singleTwo:""
+      singleOne:"https://i.ibb.co/GHB0mKt/f-1.jpg",
+      singleTwo:"https://i.ibb.co/P4bktrn/Capture.png"
     },
     {
       img: "https://i.ibb.co/QYYGXcb/lunch-1.png",
@@ -56,7 +56,7 @@ export const lunchData = [
       name: "Tarragon-Rubbed-Salmon",
       details: "Gay one the what walk then she. Demsene mention promise you justice arrived way. Amaizing foods are  or and increasing to in especially inquietude companions acceeptance admiration. Out weight it families distance wandered yet",
       id:"12",
-      singleOne:"",
-      singleTwo:""
+      singleOne:"https://i.ibb.co/hZPyvvm/Capture.png",
+      singleTwo:"https://i.ibb.co/12vXft7/s-1.png"
     }
   ]

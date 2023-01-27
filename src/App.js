@@ -20,10 +20,11 @@ function App() {
 //   const addToCart=(data)=>{
 // console.log(data)
 //   }
+const[cart, setCart] = useState([]);
   return (
     <div className="App">
       <BrowserRouter>
-    <Header/>
+    <Header count={cart.length}/>
       <Routes>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/register" element={<Register/>}></Route>

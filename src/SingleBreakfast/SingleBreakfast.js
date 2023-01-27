@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaCartPlus } from 'react-icons/fa';
 import './SingleBreakfast.css'
 
-const SingleBreakfast = (props) => {
+const SingleBreakfast = (props,addToCart) => {
   // console.log(props);
     const { price, img, name, discription, id } = props.breakfast;
   return (
@@ -20,6 +20,9 @@ const SingleBreakfast = (props) => {
                 <button
                 onClick={() => props.handleAddToCart(props.breakfast)}
                 className='btn-color'><FaCartPlus/></button>
+                {/* <button
+                // onClick={() => props.handleAddToCart(props.breakfast)}
+                className='btn-color' onClick={()=>props.addToCart(props.breakfast)}><FaCartPlus/></button> */}
               </div><br/>
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
