@@ -16,3 +16,6 @@ position: relative;
 .cart-color{
    color: #f50057;
 }
+.cart-color:hover{
+   color: #f50057;
+}

@@ -26,16 +26,14 @@ const Dinner = () => {
    <>
    <Nav/>
     {/* 1st-part */}
-    <div>
-      <Cart cart={cart}></Cart>
-    </div><br/><br/>
+
    {/* 1st-2nd */}
     <div className="container">
     <Row xs={1} md={2} className="g-5">
     {
       dinners.map(dinner => <SingleDinner
       key={dinner.img}
-      handleAddToCart={handleAddToCart}
+      // handleAddToCart={handleAddToCart}
       dinner={dinner}
       ></SingleDinner>)
     }

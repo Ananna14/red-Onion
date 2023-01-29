@@ -10,25 +10,31 @@ import Header from './Header/Header';
 import Register from './Register/Register';
 import DetailDinner from './SingleDetails/DetailDinner';
 import DetailLunch from './SingleDetails/DetailLunch';
-import { useState } from 'react';
+import React, { useContext, useReducer } from 'react';
+import { initialState } from './store/store';
+import { reducer } from './store/reducer';
+import CartItem from './CartItem/CartItem';
+
+export const CountContext = React.createContext();
 
 
 
+
+export const useStore=()=>{
+  return useContext(CountContext);
+}
 function App() {
-//   const [shoppingCart, setShoppingCart] = useState([]);
-
-//   const addToCart=(data)=>{
-// console.log(data)
-//   }
-const[cart, setCart] = useState([]);
+ const [count, dispatch] = useReducer(reducer, initialState)
   return (
+    <CountContext.Provider value={{state: count, dispatch: dispatch}}>
     <div className="App">
+      {/* Count - {count} */}
       <BrowserRouter>
-    <Header count={cart.length}/>
+    <Header></Header>
       <Routes>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/register" element={<Register/>}></Route>
-     
+
         <Route path="/" element={<Breakfast/>}></Route>
         <Route path="/breakfast" element={<Breakfast/>}></Route>
         <Route path="/lunch" element={<Lunch/>}></Route>
@@ -36,9 +42,12 @@ const[cart, setCart] = useState([]);
         <Route path="/details/:id" element={<DetailBreakfast/>}></Route>
         <Route path="/lunch/:id" element={<DetailLunch/>}></Route>
         <Route path="/dinner/:id" element={<DetailDinner/>}></Route>
+        <Route path="/cartItem" element={<CartItem/>}></Route>
+
       </Routes>
       </BrowserRouter>
     </div>
+    </CountContext.Provider>
   );
 }
 

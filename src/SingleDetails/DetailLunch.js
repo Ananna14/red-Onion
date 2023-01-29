@@ -6,6 +6,8 @@ import './DetailLunch.css'
 import { FaPlus } from 'react-icons/fa';
 import { FaMinus } from 'react-icons/fa';
 import arrow from '../arrow-img.jpg'
+import { useStore } from '../App';
+import { ADD_TO_CART } from '../store/constant';
 
 const DetailLunch = () => {
     const {id} = useParams();
@@ -17,6 +19,13 @@ const DetailLunch = () => {
         setBodyData(filtered[0]);
       }
     },[])
+    // console.log(bodyData)
+
+    const {state, dispatch } = useStore();
+    const handleAddToCart=()=>{
+      dispatch({type: ADD_TO_CART, paylod: bodyData})
+      // console.log(bodyData)
+    }
 
     const [num, setNum] = useState(0);
 
@@ -54,7 +63,7 @@ const DetailLunch = () => {
         {/* icon-added-end */}
           {/* btn-added-start */}
          <div className='text-start mt-4'>
-            <button className="mx-1 single-btn p-1 rounded"><span className="mx-1"><FaCartPlus/></span><span  className="mx-1">ADD</span></button>
+            <button onClick={handleAddToCart} className="mx-1 single-btn p-1 rounded"><span className="mx-1"><FaCartPlus/></span><span  className="mx-1">ADD</span></button>
             <Link to="/"><button className="mx-1 single-btn p-1 rounded-pill px-3 blue-btn"><span  className="mx-1">ADD MORE</span></button></Link>
          </div>
           {/* btn-added-end */}

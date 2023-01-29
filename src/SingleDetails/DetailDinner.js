@@ -5,6 +5,8 @@ import { FaCartPlus } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa';
 import { FaMinus } from 'react-icons/fa';
 import arrow from '../arrow-img.jpg'
+import { useStore } from '../App';
+import { ADD_TO_CART } from '../store/constant';
 
 const DetailDinner = () => {
     const [bodyData, setBodyData] = useState(null);
@@ -22,6 +24,11 @@ useEffect(()=>{
     const [num, setNum] = useState(0);
     const incNum =()=>{
       setNum(num + 1);
+    }
+
+    const {state, dispatch} = useStore();
+    const handleToCart = () =>{
+      dispatch({type:ADD_TO_CART, paylod:bodyData})
     }
 
     const decNum=()=>{
@@ -57,7 +64,7 @@ useEffect(()=>{
         {/* icon-added-end */}
            {/* btn-added-start */}
          <div className='text-start mt-4'>
-            <button className="mx-1 single-btn p-1 rounded"><span className="mx-1"><FaCartPlus/></span><span  className="mx-1">ADD</span></button>
+            <button onClick={handleToCart} className="mx-1 single-btn p-1 rounded"><span className="mx-1"><FaCartPlus/></span><span  className="mx-1">ADD</span></button>
             <Link to="/"><button className="mx-1 single-btn p-1 rounded-pill px-3 blue-btn"><span  className="mx-1">ADD MORE</span></button></Link>
          </div>
           {/* btn-added-end */}
