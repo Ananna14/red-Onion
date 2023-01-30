@@ -1,7 +1,7 @@
 .img-cart{
     width: 100px;
 }
-.border-area{
+.plus-minus-design{
     border: none;
     background-color: #f8f9fa;
     /* font-size:10px;  */
@@ -19,4 +19,10 @@
 }
 .delivery-text{
     margin-right: 240px;
+}
+.trash-color{
+    color: #f50057;
+}
+.cartNumber{
+    margin-left: 150px;
 }

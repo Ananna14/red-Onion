@@ -31,7 +31,9 @@ const CartItem = () => {
         </div>
         {/* 2nd-part */}
         <div className="col-lg-6 mt-5">
-             
+        <p className='text-start'>From<span className='fw-bold'>Gulsan Plaza Restaurant GPR</span><br/>
+                        Arriving in 20 - 30 min<br/>
+                        107 Rd No 8</p>
                 <div>
                    {
                         state.cart.map(item=><CartItemDelivery 
@@ -41,6 +43,8 @@ const CartItem = () => {
                         ></CartItemDelivery>)
                    }
                 </div>
+                {/* total-calculation */}
+     
         </div>
     </div>
   )

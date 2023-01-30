@@ -20,24 +20,9 @@ useEffect(()=>{
     },[id])
       // console.log(bodyData)
 
-      // incrementing & decrementing
-    const [num, setNum] = useState(0);
-    const incNum =()=>{
-      setNum(num + 1);
-    }
-
     const {state, dispatch} = useStore();
     const handleToCart = () =>{
       dispatch({type:ADD_TO_CART, paylod:bodyData})
-    }
-
-    const decNum=()=>{
-     if(num>0){
-      setNum(num-1)
-     }
-     else{
-      setNum(0)
-     }
     }
 
   return (
@@ -54,11 +39,6 @@ useEffect(()=>{
            <div className='d-flex'>
             <div>
               <h6 className='fs-2 price-text text-start'>${bodyData.price}</h6>
-            </div>
-              <div className='rounded-pill d-flex icon-added align-items-center'>
-              <h6 onClick={decNum}><span className="px-4 py-1"><FaMinus/></span></h6>
-              <h6>{num}</h6>
-              <h6 onClick={incNum}><span className='px-4 py-1'><FaPlus/></span></h6>
             </div>
           </div>
         {/* icon-added-end */}

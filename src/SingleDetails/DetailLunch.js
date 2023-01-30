@@ -26,20 +26,6 @@ const DetailLunch = () => {
       dispatch({type: ADD_TO_CART, paylod: bodyData})
       // console.log(bodyData)
     }
-
-    const [num, setNum] = useState(0);
-
-    const incNum =()=>{
-      setNum(num + 1);
-    }
-
-    const decNum = () =>{
-      if(num>0){
-        setNum(num - 1);
-      }else{
-        setNum(0);
-      }
-    }
   return (
   <div className='mt-5'>
   {
@@ -53,11 +39,6 @@ const DetailLunch = () => {
          <div className='d-flex'>
             <div>
               <h6 className='fs-2 price-text text-start'>${bodyData.price}</h6>
-            </div>
-              <div className='rounded-pill d-flex icon-added align-items-center'>
-              <h6 onClick={decNum}><span className="px-4 py-1"><FaMinus/></span></h6>
-              <h6>{num}</h6>
-              <h6 onClick={incNum}><span className='px-4 py-1'><FaPlus/></span></h6>
             </div>
           </div>
         {/* icon-added-end */}
