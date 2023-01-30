@@ -1,0 +1,22 @@
+.img-cart{
+    width: 100px;
+}
+.border-area{
+    border: none;
+    background-color: #f8f9fa;
+    /* font-size:10px;  */
+}
+.border-area:hover{
+    border: none;
+    background-color: #d8b6c2;
+}
+.item-design{
+    background-color:#f8f9fa;
+    border-radius: 100px;
+}
+.border-added{
+    border: 1px solid #c0c1c2;
+}
+.delivery-text{
+    margin-right: 240px;
+}

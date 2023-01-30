@@ -16,8 +16,9 @@
 }
 .icon-added{
     border: 1px solid rgb(200, 190, 190);
+    background-color: white;
     cursor: pointer;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .arrow-width{
     width: 50px;
