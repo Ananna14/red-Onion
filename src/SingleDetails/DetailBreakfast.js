@@ -3,8 +3,6 @@ import { Link, useParams } from 'react-router-dom'
 import { breakfastsData } from '../FilterData/Breakfast';
 // import breakfastDetails from './breakfast.json'
 import { FaCartPlus } from 'react-icons/fa';
-import { FaPlus } from 'react-icons/fa';
-import { FaMinus } from 'react-icons/fa';
 import arrow from '../arrow-img.jpg'
 import './DetailLunch.css'
 import { useStore } from '../App';

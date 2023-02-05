@@ -25,10 +25,10 @@ export const useStore=()=>{
 }
 function App() {
  const [count, dispatch] = useReducer(reducer, initialState)
+ 
   return (
     <CountContext.Provider value={{state: count, dispatch: dispatch}}>
     <div className="App">
-      {/* Count - {count} */}
       <BrowserRouter>
     <Header></Header>
       <Routes>

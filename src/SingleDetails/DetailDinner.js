@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { dinnerData } from '../FilterData/DinnerData';
 import { FaCartPlus } from 'react-icons/fa';
-import { FaPlus } from 'react-icons/fa';
-import { FaMinus } from 'react-icons/fa';
 import arrow from '../arrow-img.jpg'
 import { useStore } from '../App';
 import { ADD_TO_CART } from '../store/constant';
