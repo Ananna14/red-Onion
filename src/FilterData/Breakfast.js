@@ -10,7 +10,8 @@ export const breakfastsData =[
         singleTwo:"https://i.ibb.co/fSKVjd0/br-2.jpg",
         tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
       },
       {
         name: "Breakfast Sandwich",
@@ -23,7 +24,8 @@ export const breakfastsData =[
         singleTwo:"https://i.ibb.co/09Q5Cw0/Capture.png",
         tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
       },
       {
         name: "Eggs Benedict",
@@ -36,7 +38,8 @@ export const breakfastsData =[
         singleTwo:"https://i.ibb.co/YtwNXcJ/Capture.png",
         tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
       },
       {
         name: "Toast Coroissant Fried egg",
@@ -49,7 +52,8 @@ export const breakfastsData =[
         singleTwo:"https://i.ibb.co/DgjcbhB/Capture.png",
         tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
       },
       {
         name: "Backed Chicken",
@@ -63,7 +67,7 @@ export const breakfastsData =[
         tax:1,
       deliveryFee:9.99,
       quantity:1,
-      quantity:1
+      total:0
       },
       {
         name: "Full breakfast Fried Egg Toast Brunch",
@@ -77,7 +81,7 @@ export const breakfastsData =[
         tax:1,
       deliveryFee:9.99,
       quantity:1,
-      quantity:1
+      total:0
       }
 ]
 

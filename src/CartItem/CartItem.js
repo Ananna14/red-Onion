@@ -46,7 +46,7 @@ const CartItem = () => {
                    }
                 </div>
                 {/* total-calculation */}
-                {/* <CalculationCart/> */}
+                <CalculationCart/>
         </div>
 
     </div>

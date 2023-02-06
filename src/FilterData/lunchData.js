@@ -10,7 +10,8 @@ export const lunchData = [
       singleTwo:"https://i.ibb.co/4WffG0g/Capture.png",
        tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       img: "https://i.ibb.co/jzxdJ3F/lunch2.png",
@@ -23,7 +24,8 @@ export const lunchData = [
       singleTwo:"https://i.ibb.co/qJZRmyD/Capture-2.png",
        tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       img: "https://i.ibb.co/GWttSFm/lunch3.png",
@@ -36,7 +38,8 @@ export const lunchData = [
       singleTwo:"https://i.ibb.co/Z1rK6ys/i-2.png",
        tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       img: "https://i.ibb.co/MyHttMT/lunch5.png",
@@ -49,7 +52,8 @@ export const lunchData = [
       singleTwo:"https://i.ibb.co/dW3bWbs/Capture.png",
        tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       img: "https://i.ibb.co/WcwZWVD/lunch-2.png",
@@ -62,7 +66,8 @@ export const lunchData = [
       singleTwo:"https://i.ibb.co/P4bktrn/Capture.png",
        tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       img: "https://i.ibb.co/QYYGXcb/lunch-1.png",
@@ -75,6 +80,7 @@ export const lunchData = [
       singleTwo:"https://i.ibb.co/12vXft7/s-1.png",
        tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
     }
   ]

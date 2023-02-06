@@ -10,7 +10,8 @@ export const dinnerData = [
       singleTwo:"https://i.ibb.co/MPwq6jV/d-2.png",
       tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       name: "Lemony Salmon Piccata",
@@ -23,7 +24,8 @@ export const dinnerData = [
       singleTwo:"https://i.ibb.co/TcPYpnt/s-4.jpg",
       tax:1,
       deliveryFee:9.99,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       name: "French fries with cheese",
@@ -36,7 +38,8 @@ export const dinnerData = [
       singleTwo:"https://i.ibb.co/GCtP32k/Capture.png",
       tax:1,
       deliveryFee:9.9,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       name: "Gralic Butter Baked Salmon",
@@ -49,7 +52,8 @@ export const dinnerData = [
       singleTwo:"https://i.ibb.co/fqWdhrR/Capture.png",
       tax:1,
       deliveryFee:9.9,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       name: "Park Tenderloin With Quiona Pilaf",
@@ -62,7 +66,8 @@ export const dinnerData = [
       singleTwo:"https://i.ibb.co/qRt6MgQ/Capture.png",
       tax:1,
       deliveryFee:9.9,
-      quantity:1
+      quantity:1,
+      total:0
     },
     {
       name: "Baked Chicken",
@@ -75,6 +80,7 @@ export const dinnerData = [
       singleTwo:"https://i.ibb.co/PGm2YXw/o-2.png",
       tax:1,
       deliveryFee:9.9,
-      quantity:1
+      quantity:1,
+      total:0
     }
   ]

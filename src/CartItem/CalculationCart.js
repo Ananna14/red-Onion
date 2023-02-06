@@ -1,41 +1,36 @@
 import React, { useState } from 'react'
 import { useStore } from '../App';
-import { DECREMENT_NUMBER, INCREMENT_NUMBER } from '../store/constant';
 
 const CalculationCart = (props) => {
-    // const {price, quantity} = props.item;
-    // console.log(props)
     const {state, dispatch } = useStore();
-    // const [num, setNum] = useState(1);
+    // console.log(state)
 
-    // const incNum = () =>{
-    //     setNum(num+1)
-    //   }
-    //   const decNum = () =>{
-    //     if(num>1){
-    //       setNum(num-1)
-    //     }else{
-    //       setNum(1)
-    //     }
-    //   }
-    const increment = (id)=>{
-      dispatch({type: INCREMENT_NUMBER, paylod: id});
-    }
-    // const decrement = (id)=>{
-    //   dispatch({type: DECREMENT_NUMBER, paylod: id});
-    // }
+   const calculateTotal = ()=>{
+    let total = 0;
+    let tax = 0;
+    let subTotal = 0;
+    let deliveryFee= 0;
+    state.cart.forEach(totalItem=>{
+      total += totalItem.price * totalItem.quantity;
+      subTotal = total + deliveryFee + tax;
+      tax = 10;
+      deliveryFee= 9.9;
+     })
+    return {total, tax, deliveryFee, subTotal}
+   }
+
   return (
     <div>
             <div className='d-flex justify-content-center'>
           <p className='text-start'>Subtotal<br/>
             Tax<br/>
             Delivery Fee<br/>
-            Total<br/>
+            <span className='fw-bold'>Total</span><br/>
           </p>
-          <p className='cartNumber'>${increment}<br/>
-            {/* {quantity}<br/> */}
-            {/* {deliveryFee}<br/> */}
-            {/* {price * num + num + deliveryFee}<br/> */}
+          <p className='cartNumber'>${calculateTotal().total}<br/>
+            ${calculateTotal().tax}<br/>
+            ${calculateTotal().deliveryFee}<br/>
+            ${calculateTotal().subTotal}<br/>
           </p>
       </div>
      <div className='d-flex justify-content-end'>
