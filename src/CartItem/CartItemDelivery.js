@@ -8,24 +8,11 @@ import './cartItemDelivery.css';
 
 
 const CartItemDelivery = (props) => {
-    // console.log(props)
     const {img, name, price, deliveryFee, quantity} = props.item;
     // console.log(props)
-    const [num, setNum] = useState(1);
+
     const {state, dispatch } = useStore();
    
-   
-    const incNum = () =>{
-      setNum(num+1)
-    }
-    const decNum = () =>{
-      if(num>1){
-        setNum(num-1)
-      }else{
-        setNum(1)
-      }
-    }
-
     const handleDelete = (id)=>{
       // e.preventDefault()
       // console.log(id)
@@ -39,39 +26,6 @@ const CartItemDelivery = (props) => {
     }
   return (
     <>
-    {/* <div>
-    <table class="table caption-top">
-  <caption>List of users</caption>
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-      <th scope="col">Delete</th>
-      <th scope="col">Increse &</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td><img src={img} className="img-cart" alt="" /></td>
-      <td>{name}</td>
-      <td>$ {price}</td>
-      <td><button onClick={()=>handleDelete(props.item.id)} className='plus-minus-design trash-color'><h5><i class="fa fa-trash"></i></h5></button></td>
-      <td>
-      <button onClick={decNum}  className='plus-minus-design trash-color'><i class="fa fa-minus"></i></button>
-                <h5>{num}</h5>
-                <button onClick={incNum} className='plus-minus-design trash-color'><i class="fa fa-plus"></i></button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-    </div> */}
-   {/* {props.item.length === 0 ? (
-    // console.log(props.length)
-        <h5>no item</h5>
-      ):( */}
         <div className="res-plaza">
         <div className='row align-items-center item-design py-2 my-3'>
          
@@ -95,22 +49,6 @@ const CartItemDelivery = (props) => {
         </div> 
     
      </div>
-      {/* )} */}
-     {/* <div className='d-flex justify-content-center'>
-          <p className='text-start'>Subtotal<br/>
-            Tax<br/>
-            Delivery Fee<br/>
-            Total<br/>
-          </p>
-          <p className='cartNumber'>${price * num}<br/>
-            {num}<br/>
-            {deliveryFee}<br/>
-            {price * num + num + deliveryFee}<br/>
-          </p>
-      </div>
-     <div className='d-flex justify-content-end'>
-        <button className="btn w-75 btn-form pl-5">PLEASE   PAY</button>
-     </div> */}
     </>
       
   )

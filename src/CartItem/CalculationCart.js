@@ -20,7 +20,11 @@ const CalculationCart = (props) => {
    }
 
   return (
-    <div>
+    <>
+    {state.cart.length === 0 ? (
+      <h2>You Have No Items</h2>
+    ) :(
+      <div>
             <div className='d-flex justify-content-center'>
           <p className='text-start'>Subtotal<br/>
             Tax<br/>
@@ -33,10 +37,12 @@ const CalculationCart = (props) => {
             ${calculateTotal().subTotal}<br/>
           </p>
       </div>
-     <div className='d-flex justify-content-end'>
-        <button className="btn w-75 btn-form pl-5">PLEASE   PAY</button>
+     <div className=''>
+     <button className="btn w-75 btn-form mb-5">PLEASE   PAY</button>
      </div>
     </div>
+    )}
+    </>
   )
 }
 
