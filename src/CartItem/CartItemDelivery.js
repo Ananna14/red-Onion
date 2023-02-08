@@ -23,6 +23,9 @@ const CartItemDelivery = (props) => {
     }
     const decrement = (id)=>{
       dispatch({type: DECREMENT_NUMBER, paylod: id});
+      if(quantity === 1){
+        dispatch({type:REMOVE_FROM_CART, paylod: id})
+      }
     }
   return (
     <>

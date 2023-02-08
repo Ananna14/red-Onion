@@ -4,6 +4,7 @@ import { useStore } from '../App';
 const CalculationCart = (props) => {
     const {state, dispatch } = useStore();
     // console.log(state)
+   
 
    const calculateTotal = ()=>{
     let total = 0;

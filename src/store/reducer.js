@@ -36,8 +36,10 @@ export const reducer = (state, action) =>{
                     return{...curElem, quantity:curElem.quantity-1}
                   }
                   return curElem;
+                  
                 });
                 return {...state, cart: updatedDec}
+              
               case MULTIPLY_NUMBER:
 
         default:
