@@ -12,7 +12,6 @@ export const reducer = (state, action) =>{
            // if not then push into cart
             return {...state, cart:[...state.cart, action.paylod]}
         }
-
         case REMOVE_FROM_CART:
           const removeItem = state.cart.filter(item=>item.id !== action.paylod)
           // console.log(action.paylod, "remove") 

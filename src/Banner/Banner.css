@@ -1,4 +1,4 @@
-.banner{
+/* .banner{
     background-image: linear-gradient(45deg,rgba(251, 28, 28, 0.2),rgba(253,81,2,.2)),url("https://iili.io/2Toccg.png");
     width: 100%;
     height: 500px;
@@ -11,9 +11,50 @@
 .search-btn{
     background-color: white;
     border: none;
-    /* padding: 0px 5px; */
 }
 .edit{
     border: none;
     padding: 6px;
+} */
+.banner-pad{
+    margin-bottom: 300px;
+}
+.front-add{
+    font-size: 20px;
+}
+.btn-gap{
+    margin-bottom: 50px;
+}
+.banner-add{
+   height: 50%;
+}
+.img-added{
+ color: #ffffff;
+}
+.btn-add{
+    background-color: #ef4836;
+    border: none;
+    color: white;
+}
+.styled {
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0);
+    visibility: visible;
+    overflow: hidden;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 2px 0px;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    width: 450px;
+    height: 15px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
 }
