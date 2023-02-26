@@ -16,7 +16,7 @@ const Banner = () => {
               <input  name="" id="" classNameName='w-50 edit px-3 rounded' placeholder="Type to search..."/><button classNameName='search-btn rounded px-3'><span><FaSearch/></span></button>
             </div>
         </div> */}
-        <Carousel slide={false}>
+        <Carousel slide={false} className="cover-add">
       <Carousel.Item>
         <img
           className="d-block w-100 banner-add"
@@ -78,7 +78,6 @@ const Banner = () => {
               <div className='btn-gap'>
                 <button className="rounded-pill px-5 py-3 btn-add">LEARN MORE</button>
               </div>
-           
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

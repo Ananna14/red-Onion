@@ -1,15 +1,26 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Banner from '../Banner/Banner'
-import { Link } from 'react-router-dom';
-import { FaCartPlus } from 'react-icons/fa';
+import logo from '../images/line-one-about.png'
 import './Nav.css'
+import About from '../About/About';
+import SpecialItem from '../SpecialItem/SpecialItem'
 
 const Nav = (props) => {
   return (
      <>
      <Banner/>
+     <About/>
+     <SpecialItem/>
       <div className="container router-fixed">
+        {/* detail-text */}
+     <div className="text-start my-5">
+        <h2 className='text-about'>Our Services</h2>
+        <h3>WHAT WE OFFER</h3>
+        <img src={logo} alt="" />
+        <p className='mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br/>
+        Lorem Ipsum has been the industry's stan</p>
+     </div>
         <div className='my-5 col-12 col-lg-12 col-md-12'>
         <NavLink className="p-3 text-decoration-none text-secondary" to="/breakfast">BREAKFAST</NavLink>
         <NavLink className="p-3 text-decoration-none text-secondary" to="/lunch">LUNCH</NavLink>

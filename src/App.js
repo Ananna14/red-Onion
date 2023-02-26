@@ -30,7 +30,7 @@ function App() {
     <CountContext.Provider value={{state: count, dispatch: dispatch}}>
     <div className="App">
       <BrowserRouter>
-    <Header></Header>
+    {/* <Header></Header> */}
       <Routes>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/register" element={<Register/>}></Route>

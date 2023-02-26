@@ -1,3 +1,12 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: black;
+    line-height: 1.6em;
+    font-weight: 500;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
 .single-btn{
     background-color: #f50057;
     border: none;

@@ -1,0 +1,16 @@
+/* p::before{
+    position: relative;
+    padding: 100px 0px;
+    background: #ffffff url("https://iili.io/2Toccg.png") -100px 20% no-repeat;
+} */
+.text-about{
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    color: #ea625c;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.img-add{
+    width: 500px;
+}
+

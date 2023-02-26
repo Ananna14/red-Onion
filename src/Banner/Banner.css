@@ -16,17 +16,21 @@
     border: none;
     padding: 6px;
 } */
+.cover-add{
+    background-color:#606060;
+}
 .banner-pad{
     margin-bottom: 300px;
 }
 .front-add{
     font-size: 20px;
 }
-.btn-gap{
+/* .btn-gap{
     margin-bottom: 50px;
-}
+} */
 .banner-add{
-   height: 50%;
+   height: 650px;
+ 
 }
 .img-added{
  color: #ffffff;
