@@ -1,0 +1,15 @@
+.bg-breakfast{
+    background-image: url("https://i.ibb.co/CQDP2Zn/image-2-item.png");
+    background-repeat: no-repeat;
+    background-color: #fffae4;
+}
+.nav-bg{
+    background-color: #fffae4;
+    padding-top: 50px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+}

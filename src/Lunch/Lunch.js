@@ -13,7 +13,8 @@ const Lunch = () => {
   return (
     <>
     <Nav/>
-    <div className="container">
+   <div className="bg-breakfast">
+   <div className="container">
       <Row xs={1} md={2} className="g-5">
       {
         lunchs.map(lunch => <SingleLunch
@@ -22,6 +23,7 @@ const Lunch = () => {
         ></SingleLunch>)
       }
      </Row>
+   </div>
     </div>
     <Delivery/>
     <Footer/>

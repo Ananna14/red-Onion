@@ -1,0 +1,63 @@
+.hot-img{
+    background-image: url("http://bunch.asiandevelopers.com/wp/radhuni/wp-content/themes/radhuni/images/icons/transparent-image-1.png");
+    position: relative;
+    padding: 38px 30px 21px;
+    text-align: center;
+    background-color: #ffffff;
+    background-position: 110% 110%;
+    background-repeat: no-repeat;
+}
+.price {
+    position: relative;
+    margin-bottom: 20px;
+    color: #ef4836;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+}
+.order-btn{
+    position: relative;
+    display: inline-block;
+    line-height: 24px;
+    padding: 5px 30px;
+    border: 1px solid #ef4836;
+    color: #424242;
+    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+.order-btn:hover{
+    position: relative;
+    display: inline-block;
+    line-height: 24px;
+    padding: 5px 30px;
+    border: 1px solid #ef4836;
+    background-color: #ef4836;
+    color: white;
+    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+/* .bg-image{
+    background-image: url("http://bunch.asiandevelopers.com/wp/radhuni/wp-content/themes/radhuni/images/parallax/image-1.jpg");
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 480px;
+    height: 900px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+/* .middle-img{
+    width: 380px;
+    height: 300px;
+    margin-right: 100px;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+} */

@@ -5,9 +5,9 @@ import Nav from '../Nav/Nav';
 import Delivery from '../Delivery/Delivery';
 import Footer from '../Footer/Footer';
 import { breakfastsData } from '../FilterData/Breakfast';
+import './Breakfast.css'
 
 const Breakfast = () => {
-  // const [breakfasts, setBreakfasts ] = useState([]);
   const [breakfasts, setBreakfasts ] = useState(breakfastsData);
   // console.log(breakfasts)
 
@@ -22,7 +22,8 @@ const Breakfast = () => {
   return (
    <>
     <Nav/>
-    <div className="container">
+   <div className='bg-breakfast'>
+   <div className="container">
     <Row xs={1} md={2} className="g-5">
     {
       breakfasts.map(breakfast => <SingleBreakfast
@@ -33,6 +34,7 @@ const Breakfast = () => {
     }
     </Row>
     </div>
+   </div>
     <Delivery/>
     <Footer/>
    </>

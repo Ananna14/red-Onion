@@ -28,17 +28,19 @@ const Dinner = () => {
     {/* 1st-part */}
 
    {/* 1st-2nd */}
-    <div className="container">
-    <Row xs={1} md={2} className="g-5">
-    {
-      dinners.map(dinner => <SingleDinner
-      key={dinner.img}
-      // handleAddToCart={handleAddToCart}
-      dinner={dinner}
-      ></SingleDinner>)
-    }
-   </Row>
-  </div>
+   <div className="bg-breakfast">
+      <div className="container">
+        <Row xs={1} md={2} className="g-5">
+          {
+            dinners.map(dinner => <SingleDinner
+            key={dinner.img}
+            // handleAddToCart={handleAddToCart}
+            dinner={dinner}
+            ></SingleDinner>)
+          }
+        </Row>
+      </div>
+   </div>
     <Delivery/>
     <Footer/>
    </>
